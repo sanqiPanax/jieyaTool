@@ -1,0 +1,4 @@
+# dsh-auto-extract bundle patch: 激活 auto-extract 插件行。
+- insert:
+    - id: dsh-auto-extract
+      name: 'dsh-auto-extract'

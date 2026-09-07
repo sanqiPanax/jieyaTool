@@ -1,0 +1,25 @@
+{
+  "name": "dsh-auto-extract",
+  "version": "0.1.0",
+  "description": "DSH 自动解压工具:魔数识别真格式(不信伪装后缀)、递归解压嵌套压缩包、多密码池自动尝试、SFX/分卷配对、私有格式归类报告。核心基于 7-Zip。",
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "license": "MIT"
+}
